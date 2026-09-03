@@ -4,7 +4,7 @@
 
 #Build a greeting program - Today's Assignment
 name =input("Enter your name: ")
-while True:
+while True:                                             #using while loop to prevent repeated error inputs
     try:
         age = int(input("Enter your age: "))            #except ZeroDivisionError:
         if age < 0:
