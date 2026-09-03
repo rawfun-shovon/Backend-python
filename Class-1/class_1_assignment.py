@@ -119,3 +119,36 @@ print("")
 """
 #Bookmark """
 #"""
+
+'''4. Break it, then fix it'''
+print('''\t Break it, then fix it''')
+print("")
+print('''\t Write a program that intentionally causes a TypeError 
+\t (hint: add a number to a string from input() ). 
+\t Run it, copy the error message into a comment, 
+\t then fix the code so it works. 
+\t This trains you to read errors — the most important debugging skill.''')
+print("")
+
+
+"""
+#Bookmark """
+#"""
+
+
+'''5 Explore memory with id()'''
+print('''\t 5. Explore memory with id()''')
+print("")
+
+print('''\t Create a = 200 and b = 200 , then print a is b . 
+\t Do the same with 2000 . In a comment, explain in one line 
+\t why one prints True and the other False 
+\t (revisit the small-integer cache in Section 11).''')
+
+a = 200
+b = 200
+print(a is b)
+a= 2000
+b=a
+print(a is b)
+
