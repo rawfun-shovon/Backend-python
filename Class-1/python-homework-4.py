@@ -11,12 +11,12 @@ print("")
 #input1 = int( input("Type a string:")) # I opted to do string into an integer.
 print("")
 
-
-#Traceback (most recent call last):
-#File "D:\Backend Engineering\Class 2\class_1_assignment.py", line 135, in <module>
-#input1 = int( input("Type a string:")) # I opted to do string into an integer.
-#ValueError: invalid literal for int() with base 10: 'sda'
-
+r'''
+Traceback (most recent call last):
+File "D:\Backend Engineering\Class 2\class_1_assignment.py", line 135, in <module>
+input1 = int( input("Type a string:")) # I opted to do string into an integer.
+ValueError: invalid literal for int() with base 10: 'sda'
+'''
 
 while True:
     try:
