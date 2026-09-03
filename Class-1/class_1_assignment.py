@@ -1,10 +1,10 @@
 #Remove '#' from the (""") to comment the section
 #Bookmark """
-#""""
+#"""
 
 #Build a greeting program - Today's Assignment
 name =input("Enter your name: ")
-while True:                                             #using while loop to prevent repeated error inputs
+while True:
     try:
         age = int(input("Enter your age: "))            #except ZeroDivisionError:
         if age < 0:
@@ -22,8 +22,10 @@ input("Press Enter for next problem.")
 print("")
 
 """
+import string
+
 #Bookmark """
-#""""
+#"""
 
 '''1. Temperature converter
 Ask the user for a temperature in Celsius, then print it in Fahrenheit using the
@@ -52,7 +54,7 @@ print("")
 input("Press Enter for next problem.")
 print("")
 
-#"""
+"""
 #Bookmark """
 #"""
 
@@ -70,19 +72,22 @@ print("")
 while True:
     try:
         product = float(input("Enter your product's price: "))
+        break
+    except ValueError:
+        print("Something went wrong! Please enter a numeric value.")
+
+while True:
+    try:
         quantity = int(input("Enter your quantity: "))
         break
     except ValueError:
         print("Something went wrong! Please enter a numeric value.")
 
 total = float(product * quantity)
-print(''''Product bill total:''', total)
-print("")
+print('''Product bill total:''', total)
 tax_rate =0.05
-print("")
 print("Tax rate is 5%")
 tax = float(total*tax_rate)
-print("")
 print("Total tax is $", tax)
 final_price = float(total + tax)
 print("")
@@ -105,7 +110,13 @@ print('''\t Odd or even checker.
 \t Use the modulo operator: number % 2 == 0 is True for even numbers.''')
 
 print("")
-number = int(input("Enter a number: "))
+
+while True:
+    try:
+        number = int(input("Enter a number: "))
+        break
+    except ValueError:
+        print("Something went wrong! Please enter a numeric value.")
 
 if number % 2 == 0:
     print(f"The number {number} is Even")
@@ -130,11 +141,32 @@ print('''\t Write a program that intentionally causes a TypeError
 \t This trains you to read errors — the most important debugging skill.''')
 print("")
 
+#input1 = int( input("Type a string:")) # I opted to do string into an integer.
+print("")
+
+r'''
+Traceback (most recent call last):
+File "D:\Backend Engineering\Class 2\class_1_assignment.py", line 135, in <module>
+input1 = int( input("Type a string:")) # I opted to do string into an integer.
+ValueError: invalid literal for int() with base 10: 'sda'
+'''
+
+while True:
+    try:
+        input1 = int(input("Enter a number: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a number: ")
+print("")
+print("Your input is ", input1)
+
+print("")
+input("Press Enter for next problem.")
+print("")
 
 """
 #Bookmark """
 #"""
-
 
 
 '''5 Explore memory with id()'''
@@ -152,7 +184,7 @@ print(" a = 200, id(a) = ",id(a))
 print(" b = 200, id(b) = ",id(b))
 print("")
 print(" a is b = ", id(a) is id(b))
-#print(" a is b = ", id(a) is id(b))
+#print(" a is b = ", a is b)
 
 a = 2000; b = 2000
 print(" a = 2000, id(a) = ",id(a))
@@ -163,3 +195,5 @@ print(" a is b = ", id(a) is id(b))
 """
 #Bookmark """
 #"""
+
+
