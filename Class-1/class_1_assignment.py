@@ -1,5 +1,6 @@
-#Remove Comment """
-""""
+#Remove '#' from comment """ to comment the section
+#Bookmark """
+#""""
 
 #Build a greeting program - Today's Assignment
 name =input("Enter your name: ")
@@ -10,9 +11,12 @@ next_year_age = age + 1
 print(f'Hello {name}! Next year you will be {next_year_age}.')
 print("")
 
+input("Press Enter for next problem.")
+print("")
+
 """
-#Remove Comment upper line """
-""""
+#Bookmark """
+#""""
 
 '''1. Temperature converter
 Ask the user for a temperature in Celsius, then print it in Fahrenheit using the
@@ -31,15 +35,19 @@ celsius = float(input("Enter your temperature in Celsius: "))
 fahrenheit = ((9 * celsius) / 5)+32
 print(f"The temperature is {fahrenheit} in Fahrenheit")
 
+print("")
+input("Press Enter for next problem.")
+print("")
+
 #"""
-#Remove Comment upper line
+#Bookmark """
 #"""
 
 '''2. Simple bill calculator
 Ask for a product's price and quantity, then print the total. 
 Add a 5% tax on top and print the final amount too. Use meaningful variable names in snake_case .'''
 print("")
-print(''''Simple bill calculator''')
+print('''Simple bill calculator''')
 print("")
 
 print('''Ask for a product's price and quantity, then print the total. 
@@ -60,25 +68,36 @@ print("Total tax is $", tax)
 final_price = float(total + tax)
 print("")
 print("Final price is $", final_price)
+
+
+print("")
+input("Press Enter for next problem.")
 print("")
 
 """
-#Remove Comment upper line """
-"""
+#Bookmark """
+#"""
 
 '''3. Odd or even checker
 Ask the user for a whole number and print whether it is odd or even. Use the
 modulo operator: number % 2 == 0 is True for even numbers.'''
 
-print(''''\t Odd or even checker. 
+print('''\t Odd or even checker. 
 \t Ask the user for a whole number and print whether it is odd or even. 
 \t Use the modulo operator: number % 2 == 0 is True for even numbers.''')
 
-number= int(input("Enter a number: "))
+print("")
+number = int(input("Enter a number: "))
+
 if number % 2 == 0:
     print(f"The number {number} is Even")
 else:
     print(f"The number {number} is Odd")
+
+print("")
+input("Press Enter for next problem.")
+print("")
+
 """
-#Remove Comment upper line
+#Bookmark """
 #"""
