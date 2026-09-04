@@ -2,7 +2,7 @@
 #Bookmark """
 #"""
 
-#Build a greeting program - Today's Assignment
+#Build a greeting program - Today's Assignment - greet.py
 name =input("Enter your name: ")
 while True:
     try:
