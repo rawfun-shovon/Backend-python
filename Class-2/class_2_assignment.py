@@ -138,4 +138,15 @@ print("")
 
 #SOLUTION 7 - .count(x) / .index(x) - Count occurrences / find position
 print("#SOLUTION 7 - .count(x) / .index(x) - Count occurrences / find position")
+print("")
+
+input_list1 = [1, 2, 2, 3, 3, 4, 5, 5]
+input_list2 = [5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6]
+print("")
+
+print(input_list1)
+print(input_list2)
+print("")
+print("count 5 in input list1 =",input_list1.count(5))
+print("count 6 in input list2 =",input_list2.count(6))
 
