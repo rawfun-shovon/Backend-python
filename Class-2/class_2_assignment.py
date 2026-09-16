@@ -147,6 +147,12 @@ print("")
 print(input_list1)
 print(input_list2)
 print("")
-print("count 5 in input list1 =",input_list1.count(5))
-print("count 6 in input list2 =",input_list2.count(6))
+print("count of 5 in input list1 =",input_list1.count(5))
+print("count of 6 in input list2 =",input_list2.count(6))
 
+print("")
+input("Press Enter to continue to .index(x)")
+print("")
+
+print("index of 5 in input list1 =",input_list1.index(5)) #how to get index of both 5 in input list1?
+print("index of 6 in input list2 =",input_list2.index(6))
